@@ -1,0 +1,61 @@
+Documentação Tailwindcss.
+Extensões utilizadas:
+Live Server
+Tailwind CSS IntelliSense
+
+Instalação: (https://tailwindcss.com/docs/installation)
+npm init -y => Criar o package.json
+Via npm vamos instalar o Tailwindcss em nosso projeto e criar um arquivo 'tailwind.config.js'
+npm install -D tailwindcss => Instalando 'tailwindcss'
+npx tailwindcss init => Criando arquivo 'tailwind.config.js'
+
+Configurando o arquivo de modelos:
+Crie uma pasta 'src' e dentro dessa pasta crie seu arquivo .html
+Dentro do arquivo 'tailwind.config.js' adicione o caminho para os modelos => content: ["./src/**/*.{html,js}"].
+
+Adicionando diretivas Tailwindcss:
+Crie seu arquivo CSS e cole as seguintes diretivas para funcionamento do projeto.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Iniciando a construção do Tailwindcss
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch // Este comando vai pegar tudo que está no arquivo de entrada css (Diretivas) vai criar um arquivo output e monitorar ele
+
+Importando Tailwindcss no arquivo .html
+<link href="./output.css" rel="stylesheet">
+
+Comando para recompilar o TailWind
+npx tailwindcss -o ./output.css --watch
+
+Principais classes utilizadas:
+max-w-7xl: Define a largura máxima do container como 80 rem (aproximadamente 1280px).
+text-center: Centraliza o texto.
+
+<nav class="bg-black shadow-lg">
+bg-black: Define o fundo da barra de navegação como preto.
+shadow-lg: Adiciona uma sombra grande para dar efeito de elevação na barra.
+
+<div class="max-w-full mx-auto px-6 py-6 flex justify-between items-center">
+max-w-full: Define a largura máxima como 100%.
+mx-auto: Centraliza o conteúdo horizontalmente.
+px-6: Adiciona 24px de padding horizontal (esquerda e direita).
+py-6: Adiciona 24px de padding vertical (cima e baixo).
+flex: Utiliza flexbox para distribuir o conteúdo e mudar o display do elemento.
+justify-between: Distribui os itens ao longo do eixo horizontal com espaço igual entre eles.
+items-center: Alinha verticalmente os itens no centro.
+
+<div class="text-5xl font-bold text-white">
+text-5xl: Define o tamanho da fonte como extra-grande.
+font-bold: Define o texto como negrito.
+text-white: Define a cor do texto como branco.
+
+<a class="text-white hover:text-orange-400 mx-4">
+text-white: Cor branca.
+hover:text-orange-400: Quando o cursor passa sobre o link, ele fica laranja.
+mx-4: Adiciona uma margem horizontal de 16px entre os links.
+
+<section class="bg-orange-400 text-black py-44">
+bg-orange-400: Define o fundo laranja.
+text-black: Define a cor do texto como preto.
+py-44: Adiciona 176px de padding vertical (esquerda e direita).
