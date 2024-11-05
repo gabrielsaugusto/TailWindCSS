@@ -31,7 +31,7 @@ Expressam seus sinceros agradecimentos aos professores Daniel Paiva e Charlene C
 
 Para mais informações sobre o projeto PALESTRANDO, os alunos se colocam à disposição para responder perguntas e esclarecer dúvidas através dos seguintes canais (GitHub):
 
--
+- https://github.com/Flagusto
 - https://github.com/gabrielsaugusto
 - https://github.com/Carlos-Magalhaess
 - https://github.com/JoaoPAlen
